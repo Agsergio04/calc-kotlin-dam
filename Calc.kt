@@ -24,3 +24,10 @@ fun multiplica(num1: Int, num2: Int): Int {
 fun showResult(operation: String, result: Int) {
     println("El resultado de la operación \"$operation\" es: $result")
 }
+
+fun divide(num1: Int, num2: Int): Int {
+    if (num2 == 0) {
+        throw IllegalArgumentException("Error: No se puede dividir por cero")
+    }
+    return num1 / num2
+}
